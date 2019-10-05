@@ -1,9 +1,7 @@
 ﻿namespace ConsoleAppWithAutoMapper
 {
     using System;
-    using System.Collections;
     using System.Collections.Generic;
-    using System.Linq;
     using AutoMapper;
     using PaginableCollections;
 
@@ -11,6 +9,9 @@
     {
         static void Main(string[] args)
         {
+            var itemCountPerPage = 2;
+            var pageNumber = 2;
+
             var config = new MapperConfiguration(cfg => {
                 cfg.AddProfile(new Profiles());
             });
@@ -27,11 +28,19 @@
                 new InfinityStone { Name = "Soul", Color = "Orange" }
             };
 
-            var infinityStoneDtos = mapper.Map<List<InfinityStoneDto>>(infitiyStones);
+            var paginable =
+                infitiyStones
+                    .ToPaginable<InfinityStone, InfinityStoneDto>(pageNumber, itemCountPerPage, mapper, o =>
+                    {
+                        o.Items["CraftedBy"] = "Eitri";
+                    });
 
-            infinityStoneDtos
-                .ForEach(x => Console.WriteLine($"The {x.Name} is {x.Color}"));
+            foreach (var item in paginable)
+                Console.WriteLine($"The {item.Item.Name} is {item.Item.Color}");
 
+            Console.WriteLine(string.Format("page number {0}", pageNumber));
+            Console.WriteLine(string.Format("item count per page {0}", itemCountPerPage));
+            Console.WriteLine(string.Format("showing items {0} to {1} of {2}", paginable.FirstItemNumber, paginable.LastItemNumber, paginable.TotalItemCount));
             Console.ReadLine();
         }
     }

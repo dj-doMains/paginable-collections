@@ -23,9 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppDotNetCore20", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppDotNetCore11", "samples\ConsoleAppDotNetCore11\ConsoleAppDotNetCore11.csproj", "{48954628-76B2-4736-95F3-D2F508330893}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PaginableCollections.AutoMapper", "src\PaginableCollections.AutoMapper\PaginableCollections.AutoMapper.csproj", "{F3A8C9A6-DA1D-428F-95F7-C4BF2104A314}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppWithAutoMapper", "samples\ConsoleAppWithAutoMapper\ConsoleAppWithAutoMapper.csproj", "{0A089B0B-3BA5-4433-8561-39DD1CD29419}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppWithAutoMapper", "samples\ConsoleAppWithAutoMapper\ConsoleAppWithAutoMapper.csproj", "{0A089B0B-3BA5-4433-8561-39DD1CD29419}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaginableCollections.AutoMapper", "src\PaginableCollections.AutoMapper\PaginableCollections.AutoMapper.csproj", "{F8345090-AD1F-4F31-A748-DB2CB45E12F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,14 +53,14 @@ Global
 		{48954628-76B2-4736-95F3-D2F508330893}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48954628-76B2-4736-95F3-D2F508330893}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48954628-76B2-4736-95F3-D2F508330893}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F3A8C9A6-DA1D-428F-95F7-C4BF2104A314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3A8C9A6-DA1D-428F-95F7-C4BF2104A314}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3A8C9A6-DA1D-428F-95F7-C4BF2104A314}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3A8C9A6-DA1D-428F-95F7-C4BF2104A314}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0A089B0B-3BA5-4433-8561-39DD1CD29419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0A089B0B-3BA5-4433-8561-39DD1CD29419}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A089B0B-3BA5-4433-8561-39DD1CD29419}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A089B0B-3BA5-4433-8561-39DD1CD29419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8345090-AD1F-4F31-A748-DB2CB45E12F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8345090-AD1F-4F31-A748-DB2CB45E12F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8345090-AD1F-4F31-A748-DB2CB45E12F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8345090-AD1F-4F31-A748-DB2CB45E12F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
